@@ -1,6 +1,6 @@
-/*Count the Occurrences of a Given Element in an Array
+/* Check if an Array Contains a Given Element
 Problem Description:
-Given an integer array and an integer element, count the number of occurrences of the element in the array.
+Given an integer array and an integer element, check if the array contains the element.
 */
 import java.util.Scanner;
 public class SearchAnElement {
