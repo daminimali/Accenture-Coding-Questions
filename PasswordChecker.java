@@ -42,7 +42,7 @@ public class PasswordChecker{
             if(str.charAt(i)>='A' && str.charAt(i)<='Z'){
                 cap++;
             }
-            if(str.charAt(i)>='0' && str.charAt(i)<='1'){
+            if(str.charAt(i)>='0' && str.charAt(i)<='9'){
                 num++;
             }
         }
