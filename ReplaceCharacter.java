@@ -17,22 +17,28 @@ Explanation:
 ‘A’ in original string is replaced with ‘p’ and ‘p’ in original string is replaced with ‘a’, thus output is paales.
 */
 import java.util.Scanner;
-class practice{
-    public static String solution(String input){
-        char[] str = input.toCharArray();
-        for(int i=0;i<str.length;i++){
-            if(str[i] == 'a'){
-                str[i] = 'b';
+public class practice {
+    public static String replaceCharacter(String str, char ch1, char ch2){
+        int n = str.length();
+        if(str == null){
+            return null;
+        }
+        char input[] = str.toCharArray();
+        for(int i=0;i<input.length;i++){
+            if(input[i] == ch1){
+                input[i] = ch2;
             }
-            else if(str[i] == 'b'){
-                str[i] = 'a';
+            else if(input[i] == ch2){
+                input[i] = ch1;
             }
         }
-        return new String(str);
+        return new String(input);
     }
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        String input = sc.next();
-        System.out.println(solution(input));
+        String str = sc.next();
+        char ch1 = sc.next().charAt(0);
+        char ch2 = sc.next().charAt(0);
+        System.out.println(replaceCharacter(str,ch1,ch2));
     }
 }
